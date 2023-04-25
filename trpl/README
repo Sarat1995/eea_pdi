@@ -1,0 +1,22 @@
+This tool allows you to fit biexponential decay curves to your TRPL (time-resolved photoluminescence) data files. To use this tool, follow these steps:
+
+Make sure all the code files are in the same folder.
+
+Save your TRPL data files with the naming convention "XXX.csv", where "XXX" is a three-digit number representing the temperature in Kelvin (e.g., "010.csv" for temperature 10K).
+
+Save your exciton densities as a column text file named "XXX_densities.txt", where "XXX" is the same three-digit number used for the data file.
+
+Create a folder to save the fitted biexponential decay curves, and make sure it is in the same folder as your data files and the code files.
+
+Open a terminal window and navigate to the folder containing the code files and the data files.
+
+To run the code, type the following command in the terminal:
+
+python fit_trpl.py XXX.csv -D -a -f 1
+
+Replace "XXX" with the three-digit number corresponding to your data file The command-line arguments have the following meanings:
+
+-D: Read the exciton density from the corresponding text file.
+-a: Average the first four data points (useful for data with 16ps spacing between time points).
+-f 1: Fit the second-highest  exciton density and report the annihilation rate.
+The code will numerically fit and extract EEA rate . 
