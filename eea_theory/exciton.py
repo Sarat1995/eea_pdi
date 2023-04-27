@@ -52,8 +52,8 @@ class Exciton:
         else:
             p = ''
         
-        if os.path.exists('/Users/ian/Documents/PDI/VibroNISE/runs/'):
-            dirname = '/Users/ian/Documents/PDI/VibroNISE/runs/'
+        if os.path.exists('../VibroNISE/runs/'):
+            dirname = '../VibroNISE/runs/'
             dirname = os.path.join(dirname, self.molecule + p) 
         else:
             dirname = ''
