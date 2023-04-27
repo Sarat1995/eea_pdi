@@ -1,4 +1,5 @@
 cd VibroNISE
+mkdir bin
 make all
 cd runs/n-ph-pdi
 ../../bin/VibroNISE InputDirect1D.dat
