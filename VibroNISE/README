@@ -1,0 +1,19 @@
+VibroNISE
+
+Authors: Roel Tempelaar and Ian S. Dunn.
+
+Command line installation: 
+
+    Run "make all" from top level directory.
+
+Check:
+
+    cd examples/from_roel
+    ../../bin/VibroNISE Input.dat
+
+    Compare XPopulations.dat against references/XPopulations.dat.
+
+Run PDI calculations with parameterized Frenkel/CT-Holstein model:
+
+    cd runs/n-ph-pdi OR cd runs/tp-pdi
+    ../../bin/VibroNISE InputDirect1D.dat
